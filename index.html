@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="image/spotify.logo.png" alt="spotify.logo" class="logo" />
+      <ul class="nav-links">
+        <li>🏠 Home</li>
+        <li>🔍 Search</li>
+        <li>📚 Your Library</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="top-bar">
+        <h2>Good Evening 🌙</h2>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for songs, artists..." id="searchInput" />
+        </div>
+      </div>
+
+    <div class="playlists" id="playlistContainer">
+
+        <div class="playlist-card" data-song="piano.mp3">
+          <img src="image/playlist1.jpg" alt="Playlist">
+          <h4>Peaceful Piano</h4>
+        </div>
+        <div class="playlist-card" data-song="lofi.mp3">
+          <img src="image/playlist2.jpg" alt="Playlist">
+          <h4>Lo-Fi Beats</h4>
+        </div>
+        <div class="playlist-card" data-song="chill.mp3">
+          <img src="image/playlist3.jpg" alt="Playlist">
+          <h4>Chill Hits</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Music Player -->
+<div class="music-player">
+  <button id="playPauseBtn">▶</button>
+  <audio id="audioPlayer" src="" preload="auto"></audio>
+  <div class="progress-container">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+  <span id="currentSong">Select a song</span>
+  <input type="range" id="volumeControl" min="0" max="1" step="0.01" />
+</div>
+
+  
+  
+
+<script src="script.js"></script>
+
+</body>
+</html>
