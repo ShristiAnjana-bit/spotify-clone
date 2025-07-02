@@ -28,3 +28,5 @@ spotify-clone/
 ├── playlist2.jpg
 └── playlist3.jpg
 
+## 🔗 Live Preview  
+[Click to view project](https://shristianjana-bit.github.io/spotify-clone/)
